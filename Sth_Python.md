@@ -24,4 +24,10 @@ print b#[1, 2, 3]
 
 类无其他继承时加上`objectclass A(object)`:`super` 只能用于新式类`super`多类继承时不会重复执行
 
-###  
+###  bound method 和unboud method
+```
+class C():
+  def foo():
+    pass
+```
+bound method 是对象的方法`C().foo`， unbound method 是类的方法`C.foo`
